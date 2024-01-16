@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, NavLink } from "react-router-dom"
-
+import avatar from "/assets/images/avatar-icon.png"
+import logOut from "/assets/images/logout.png"
 export default function Header() {
     const activeStyles = {
         fontWeight: "bold",
@@ -36,11 +37,13 @@ export default function Header() {
                 </NavLink>
                 <Link to="login" className="login-link">
                     <img 
-                        src="../assets/images/avatar-icon.png" 
+                        src={avatar}
                         className="login-icon"
                     />
                 </Link>
-                <button onClick={fakeLogOut}>X</button>
+                <button className="logout" onClick={fakeLogOut}> 
+                <img className="logout" src={logOut} alt="logout" /> 
+                </button>
             </nav>
         </header>
     )
