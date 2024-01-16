@@ -74,6 +74,11 @@ header .site-logo {
     font-size: 25px;
 }
 
+.logout{
+    border: none;
+    background-color: transparent;
+}
+
 header a {
     text-decoration: none;
     color: #4D4D4D;
